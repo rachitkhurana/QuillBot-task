@@ -1,0 +1,20 @@
+@import '../../../scss/common.scss';
+
+.HeroCenterWithBtn-root {
+    padding-top: 130px !important;
+    padding-bottom: 130px !important;
+
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+
+    @include mobile {
+        background-size: cover;
+        background-position-x: -100px;
+    }
+    
+
+    p {
+        color: $lightgray;
+    }
+}

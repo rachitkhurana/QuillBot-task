@@ -1,0 +1,17 @@
+@import '../../../scss/common.scss';
+
+.PrimaryLinkBtn-root {
+    padding: 12px 32px;
+    white-space: nowrap;
+    
+    @include transition-200;
+
+    &:hover {
+        box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.3);
+        filter: brightness(108%);
+    }
+
+    @include mobile {
+        padding: 12px 24px;
+    }
+}
