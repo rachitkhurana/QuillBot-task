@@ -1244,3 +1244,17 @@ a {
 @mixin transition-200 {
   transition: all 0.2s ease-in-out;
 }
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pt-60 {
+  padding-top: 60px !important;
+}
+
+.pb-m-0 {
+  @include mobile {
+    padding-bottom: 0 !important;
+  }
+}

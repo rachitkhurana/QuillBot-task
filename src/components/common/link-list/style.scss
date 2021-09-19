@@ -1,0 +1,36 @@
+@import '../../../scss/common.scss';
+
+.LinkList-root {
+    .link-element {
+        max-width: 80%;
+        min-width: 400px;
+
+        border-bottom: 2px $weatish solid;
+        padding: 20px 24px;
+        padding-left: 4px;
+
+        @include transition-200;
+
+        @include tablet {
+            // min-width: ;
+        }
+
+        @include mobile {
+            min-width: 250px;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:first-child {
+            padding-top: 8px;
+        }
+
+        .link-title {
+            color: $blue;
+        }
+    }
+}

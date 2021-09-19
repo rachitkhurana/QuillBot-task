@@ -1,5 +1,14 @@
 @import '../../scss/common.scss';
 
 .Landing-root {
-    
+    .sectionOne-container {
+        background-position-y: -70px;
+        background-repeat: no-repeat;
+        background-position-x: -200px;
+
+        @include mobile {
+            background-size: cover;
+            background-position-x: -100px;
+        }
+    }
 }

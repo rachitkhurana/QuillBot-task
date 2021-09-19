@@ -9,6 +9,34 @@ export const headerData = {
 }
 
 export const landingPageData = {
+    sectionOne: {
+        title: 'Aim High With Brilliant Writing',
+        link: {
+            title: 'Upgrade to Grammarly Premium'
+        },
+        backgroundImage: 'https://static.grammarly.com/assets/files/06666c30f97cce25ac1cf1c4573332c2/swoosh.png',
+        image: [
+            'https://static.grammarly.com/assets/files/18c5385a8f59a60ee1a389426a2a0b89/writing_sample.svg',
+            'https://static.grammarly.com/assets/files/718a361635f4474a3b373645dce51bec/writing_sample.svg'
+        ],
+        links: [
+            {
+                title: 'Clear Confident Communication',
+                url: '/',
+                description: 'Take the Guesswork out of great writing.'
+            },
+            {
+                title: 'Clear Confident Communication',
+                url: '/',
+                description: 'Take the Guesswork out of great writing.'
+            },
+            {
+                title: 'Clear Confident Communication',
+                url: '/',
+                description: 'Take the Guesswork out of great writing.'
+            }
+        ]
+    },
     sectionFour: {
         title: 'Premium Customers Report Better Results',
         description: 'We routinly survey Grammarly users and have found that:',

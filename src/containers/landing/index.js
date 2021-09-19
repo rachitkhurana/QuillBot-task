@@ -4,10 +4,28 @@ import HeroCenterWithBtn from '../../components/common/hero-center-with-btn';
 import { get } from 'lodash';
 import "antd/dist/antd.css";
 import HeroWithCircleBars from '../../components/common/hero-with-circle-bars';
+import TwoCol from '../../components/common/two-col';
+import ImagesFader from '../../components/common/images-fader';
+import LinkList from '../../components/common/link-list';
 
 const Landing = (props) => {
     return (
         <main className="Landing-root">
+            {get(props, 'data.sectionOne', false) && <section
+                    className="sectionOne-container"
+                    style={{backgroundColor: get(props, 'data.sectionOne.backgroundColor', 'transparent'), backgroundImage: `url(${get(props, 'data.sectionOne.backgroundImage', '')})`}}
+                >
+                <HeroCenterWithBtn
+                    className="pt-60 pb-m-0"
+                    title={get(props, 'data.sectionOne.title')}
+                    buttonTitle={get(props, 'data.sectionOne.link.title')}
+                    buttonUrl={get(props, 'data.sectionOne.link.url')}
+                />
+                <TwoCol
+                    one={<ImagesFader images={get(props, 'data.sectionOne.image', [])} shadow={true} />}
+                    two={<LinkList links={get(props, 'data.sectionOne.links', [])} />}
+                />
+            </section>}
             {get(props, 'data.sectionThree', false) && <HeroRightImageVideo
                 backgroundColor={get(props, 'data.sectionThree.backgroundColor')}
                 textColor={get(props, 'data.sectionThree.textColor')}
