@@ -131,7 +131,7 @@ export const landingPageData = {
 };
 
 export const footerData = {
-    copyright: '2021 © Grammarly Inc.',
+    copyright: '2021 © Cpoyright to Grammarly and its reference reserved by Grammarly, and that of code Reserved by Me 😇',
     items: [
         {
             title: 'PRODUCT',

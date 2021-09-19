@@ -54,7 +54,7 @@ const Footer = (props) => {
                 </Collapse>
             </div>
 
-            {get(props, 'copyright', false) && <p className="mt-24">{props.copyright}</p>}
+            {get(props, 'copyright', false) && <p className="mt-24 copyright-text">{props.copyright}</p>}
         </footer>
     )
 }

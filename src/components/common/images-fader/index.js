@@ -5,23 +5,29 @@ import './style.scss';
 const ImagesFader = ({images, shadow}) => {
     const [activeImage, setActiveImage] = useState(0);
 
-    const animationDuration = 400;
+    const animationDuration = 500;
 
     let intervalId;
 
+    const getActiveImage = () => {
+        return activeImage;
+    }
+
     useEffect(() => {
-        intervalId = setInterval(() => {
-            // TODO: this logic
-            // setTimeout(() => {
-                console.log(activeImage);
-                const newState = activeImage > images.length - 1 ? 0 : activeImage + 1;
-                setActiveImage(newState);
-            // }, 1000);
-        }, 1000);
+        intervalId = setTimeout(() => {
+            console.log(getActiveImage(), images.length);
+            console.log(getActiveImage() > images.length);
+
+            if (getActiveImage() < images.length-1) {
+                setActiveImage(getActiveImage()+1);
+            } else {
+                setActiveImage(0);
+            }
+        }, 4000);
         return () => {
-            clearInterval(intervalId)
+            clearTimeout(intervalId)
         }
-    }, [])
+    }, [activeImage])
 
     return (
         <div className="flex justify-center ImagesFader-root w-full">
