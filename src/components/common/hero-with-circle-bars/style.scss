@@ -15,8 +15,9 @@
     }
 
     .bar-description {
-        margin-top: 12px;
+        margin-top: 24px;
         padding-right: 24px;
+        color: $lightgray;
 
         @media (max-width: $tablet-p-width) {
             margin-top: 0;
