@@ -1,0 +1,18 @@
+@import '../../../scss/common.scss';
+
+.Footer-root {
+    background-color: #F0F2FC;
+
+    .item-wrapper {
+        h5 {
+
+        }
+
+        a {
+            color: $silver;
+            display: block;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+    }
+}

@@ -131,6 +131,7 @@ export const landingPageData = {
 };
 
 export const footerData = {
+    copyright: '2021 © Grammarly Inc.',
     items: [
         {
             title: 'PRODUCT',
@@ -184,6 +185,56 @@ export const footerData = {
         },
         {
             title: 'FEATURES',
+            links: [
+                {
+                    title: 'Plans',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Premium',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Business',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Desktop Apps',
+                    url: '/'
+                },
+                {
+                    title: 'Made by Rachit Khurana',
+                    url: 'https://www.linkedin.com/in/rachitkhurana'
+                },
+            ]
+        },
+        {
+            title: 'TRUST',
+            links: [
+                {
+                    title: 'Plans',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Premium',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Business',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Desktop Apps',
+                    url: '/'
+                },
+                {
+                    title: 'Made by Rachit Khurana',
+                    url: 'https://www.linkedin.com/in/rachitkhurana'
+                },
+            ]
+        },
+        {
+            title: 'CONNECT',
             links: [
                 {
                     title: 'Plans',
