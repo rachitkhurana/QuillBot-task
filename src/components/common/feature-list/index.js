@@ -6,7 +6,7 @@ import { CheckOutlined } from '@ant-design/icons';
 
 const FeatureList = (props) => {
     return (
-        <article className={`w-full FeatueList-root ${get(props, 'className', '')}`}>
+        <article className={`mb-30 FeatueList-root ${get(props, 'className', '')}`}>
             {get(props, 'hint', false) && <h4 className="text-11">{props.hint}</h4>}
             {get(props, 'title', false) && <h3 className='text-24 font-bold'>{props.title}</h3>}
             {get(props, 'description', false) && <p className=' text-14 main-description'>{props.description}</p>}

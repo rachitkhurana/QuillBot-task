@@ -4,13 +4,42 @@
     background-color: #F0F2FC;
 
     .item-wrapper {
-        h5 {
 
+        @media (max-width: $tablet-p-width) {
+            display: none;
         }
 
         a {
             color: $silver;
             display: block;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .item-wrapper-mobile {
+        @media (min-width: $tablet-p-width) {
+            display: none;
+        }
+
+        .ant-collapse-header {
+            padding-left: 0;
+            padding-right: 0;
+            font-weight: bolder;
+
+            .ant-collapse-arrow {
+                right: 0;
+            }
+        }
+
+        .ant-collapse-content-box {
+            padding-top: 0 !important;
+        }
+
+        a {
+            color: $silver;
+            display: block;
+            padding: 8px 0;
             margin-top: 4px;
             margin-bottom: 4px;
         }

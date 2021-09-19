@@ -149,7 +149,7 @@ export const footerData = {
                     url: '/'
                 },
                 {
-                    title: 'Grammarly Desktop Apps',
+                    title: 'Grammarly Desktop',
                     url: '/'
                 },
                 {
@@ -174,7 +174,7 @@ export const footerData = {
                     url: '/'
                 },
                 {
-                    title: 'Grammarly Desktop Apps',
+                    title: 'Grammarly Desktop',
                     url: '/'
                 },
                 {
@@ -199,7 +199,7 @@ export const footerData = {
                     url: '/'
                 },
                 {
-                    title: 'Grammarly Desktop Apps',
+                    title: 'Grammarly Desktop',
                     url: '/'
                 },
                 {
@@ -224,7 +224,7 @@ export const footerData = {
                     url: '/'
                 },
                 {
-                    title: 'Grammarly Desktop Apps',
+                    title: 'Grammarly Desktop',
                     url: '/'
                 },
                 {
@@ -249,7 +249,7 @@ export const footerData = {
                     url: '/'
                 },
                 {
-                    title: 'Grammarly Desktop Apps',
+                    title: 'Grammarly Desktop',
                     url: '/'
                 },
                 {

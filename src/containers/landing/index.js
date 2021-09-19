@@ -38,7 +38,6 @@ const Landing = (props) => {
                     className='pt-0'
                     centered={true}
                     one={<FeatureList
-                            className="flex-end-not-mobile"
                             hint={get(props, 'data.sectionTwo.featureListOne.hint', false)}
                             title={get(props, 'data.sectionTwo.featureListOne.title', false)}
                             description={get(props, 'data.sectionTwo.featureListOne.description', false)}
@@ -47,7 +46,6 @@ const Landing = (props) => {
                             buttonUrl={get(props, 'data.sectionTwo.featureListOne.link.url', false)}
                         />}
                     two={<FeatureList
-                            className="flex-start-not-mobile"
                             hint={get(props, 'data.sectionTwo.featureListTwo.hint', false)}
                             title={get(props, 'data.sectionTwo.featureListTwo.title', false)}
                             description={get(props, 'data.sectionTwo.featureListTwo.description', false)}
