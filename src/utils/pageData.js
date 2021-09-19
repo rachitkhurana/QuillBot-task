@@ -37,24 +37,59 @@ export const landingPageData = {
             }
         ]
     },
-    sectionFour: {
-        title: 'Premium Customers Report Better Results',
-        description: 'We routinly survey Grammarly users and have found that:',
-        items: [
-            {
-                percent: 76,
-                description: '76% of users or Grammarly fing writing more enjoyable.'
+    sectionTwo: {
+        title: 'Up-Level Your Communication',
+        description: 'Unlock Grammarly Premium’s advanced features and suggestions.',
+        featureListOne: {
+            hint: 'FOR CASUAL WRITING',
+            title: 'Free',
+            description: 'Basic writing suggestions.',
+            link: {
+                title: 'Go for Free',
+                url: '/'
             },
-            {
-                percent: 76,
-                description: '76% of users or Grammarly fing writing more enjoyable.'
+            features: [
+                {
+                    title: 'Spelling',
+                    description: 'Lorem Ispum Dolor Sit.'
+                },
+                {
+                    title: 'Grammar',
+                    description: 'Lorem Ispum Dolor Sit.'
+                },
+                {
+                    title: 'Punctuations',
+                    description: 'Lorem Ispum Dolor Sit.'
+                }
+            ]
+        },
+        featureListTwo: {
+            hint: 'FOR SCHOOL AND WORK WRITING',
+            title: 'Premium',
+            description: 'Style, tone, and clarity improvements for writing at work and school.',
+            link: {
+                title: 'Upgrade to Premium',
+                url: '/'
             },
-            {
-                percent: 76,
-                description: '76% of users or Grammarly fing writing more enjoyable.'
-            }
-        ],
-        backgroundColor: '#f9faff'
+            features: [
+                {
+                    title: 'Everything in Free',
+                    description: 'Lorem Ispum Dolor Sit.'
+                },
+                {
+                    title: 'Clarity Focused sentence rewrites',
+                    description: 'Lorem Ispum Dolor Sit.'
+                },
+                {
+                    title: 'Tone Adjustments',
+                    description: 'Lorem Ispum Dolor Sit.'
+                },
+                {
+                    title: 'Plagrism Detection',
+                    description: 'Lorem Ispum Dolor Sit.'
+                }
+            ]
+        }
     },
     sectionThree: {
         title: 'Get The Job Done',
@@ -65,6 +100,25 @@ export const landingPageData = {
         backgroundColor: '#3659b5',
         textColor: '#ffffff'
     },
+    sectionFour: {
+        title: 'Premium Customers Report Better Results',
+        description: 'We routinly survey Grammarly users and have found that:',
+        items: [
+            {
+                percent: 76,
+                description: '76% of users or Grammarly fing writing more enjoyable.'
+            },
+            {
+                percent: 61,
+                description: '61% of users or Grammarly fing writing more enjoyable.'
+            },
+            {
+                percent: 84,
+                description: '84% of users or Grammarly fing writing more enjoyable.'
+            }
+        ],
+        backgroundColor: '#f9faff'
+    },
     sectionFive: {
         title: 'Take Your Writing from Good to Great',
         description: 'Unlock grammarly Premium’s advance features to level up your communication.',
@@ -74,4 +128,84 @@ export const landingPageData = {
         },
         backgroundImage: 'https://static.grammarly.com/assets/files/7704056c286a7b6b242f7f6839113502/swoosh.png'
     }
+};
+
+export const footerData = {
+    items: [
+        {
+            title: 'PRODUCT',
+            links: [
+                {
+                    title: 'Plans',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Premium',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Business',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Desktop Apps',
+                    url: '/'
+                },
+                {
+                    title: 'Made by Rachit Khurana',
+                    url: 'https://www.linkedin.com/in/rachitkhurana'
+                },
+            ]
+        },
+        {
+            title: 'COMPANY',
+            links: [
+                {
+                    title: 'Plans',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Premium',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Business',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Desktop Apps',
+                    url: '/'
+                },
+                {
+                    title: 'Made by Rachit Khurana',
+                    url: 'https://www.linkedin.com/in/rachitkhurana'
+                },
+            ]
+        },
+        {
+            title: 'FEATURES',
+            links: [
+                {
+                    title: 'Plans',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Premium',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Business',
+                    url: '/'
+                },
+                {
+                    title: 'Grammarly Desktop Apps',
+                    url: '/'
+                },
+                {
+                    title: 'Made by Rachit Khurana',
+                    url: 'https://www.linkedin.com/in/rachitkhurana'
+                },
+            ]
+        }
+    ]
 }

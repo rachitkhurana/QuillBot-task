@@ -27,8 +27,8 @@ const HeroWithCircleBars = (props) => {
                                             pathColor: '#2cb673',
                                             trailColor: '#f2f2f2'
                                         })}
-                                        value={get(element, 'percentage', 50)}
-                                        text={`${get(element, 'percentage', 50)}%`} />
+                                        value={get(element, 'percent', 50)}
+                                        text={`${get(element, 'percent', 50)}%`} />
                                 </div>
                                 {get(element, 'description', false) && <p className="bar-description">
                                         {element.description}

@@ -7,6 +7,7 @@ import HeroWithCircleBars from '../../components/common/hero-with-circle-bars';
 import TwoCol from '../../components/common/two-col';
 import ImagesFader from '../../components/common/images-fader';
 import LinkList from '../../components/common/link-list';
+import FeatureList from '../../components/common/feature-list';
 
 const Landing = (props) => {
     return (
@@ -26,6 +27,36 @@ const Landing = (props) => {
                     two={<LinkList links={get(props, 'data.sectionOne.links', [])} />}
                 />
             </section>}
+            {get(props, 'data.sectionTwo', false) && <section
+                    className="sectionTwo-container">
+                <HeroCenterWithBtn
+                    className="pb-0"
+                    title={get(props, 'data.sectionTwo.title', false)}
+                    description={get(props, 'data.sectionTwo.description', false)}
+                />
+                <TwoCol
+                    className='pt-0'
+                    centered={true}
+                    one={<FeatureList
+                            className="flex-end-not-mobile"
+                            hint={get(props, 'data.sectionTwo.featureListOne.hint', false)}
+                            title={get(props, 'data.sectionTwo.featureListOne.title', false)}
+                            description={get(props, 'data.sectionTwo.featureListOne.description', false)}
+                            features={get(props, 'data.sectionTwo.featureListOne.features', [])}
+                            buttonTitle={get(props, 'data.sectionTwo.featureListOne.link.title', false)}
+                            buttonUrl={get(props, 'data.sectionTwo.featureListOne.link.url', false)}
+                        />}
+                    two={<FeatureList
+                            className="flex-start-not-mobile"
+                            hint={get(props, 'data.sectionTwo.featureListTwo.hint', false)}
+                            title={get(props, 'data.sectionTwo.featureListTwo.title', false)}
+                            description={get(props, 'data.sectionTwo.featureListTwo.description', false)}
+                            features={get(props, 'data.sectionTwo.featureListTwo.features', [])}
+                            buttonTitle={get(props, 'data.sectionTwo.featureListTwo.link.title', false)}
+                            buttonUrl={get(props, 'data.sectionTwo.featureListTwo.link.url', false)}
+                        />}
+                />
+            </section>}
             {get(props, 'data.sectionThree', false) && <HeroRightImageVideo
                 backgroundColor={get(props, 'data.sectionThree.backgroundColor')}
                 textColor={get(props, 'data.sectionThree.textColor')}
@@ -35,6 +66,12 @@ const Landing = (props) => {
                 image={get(props, 'data.sectionThree.image', false)}
                 video={get(props, 'data.sectionThree.video', false)}
             />}
+            {get(props, 'data.sectionFour', false) && <HeroWithCircleBars
+                title={get(props, 'data.sectionFour.title', false)}
+                description={get(props, 'data.sectionFour.description', false)}
+                items={get(props, 'data.sectionFour.items', false)}
+                backgroundColor={get(props, 'data.sectionFour.backgroundColor', 'transparent')}
+            />}
             {get(props, 'data.sectionFive', false) && <HeroCenterWithBtn
                 title={get(props, 'data.sectionFive.title')}
                 description={get(props, 'data.sectionFive.description')}
@@ -42,12 +79,7 @@ const Landing = (props) => {
                 buttonUrl={get(props, 'data.sectionFive.link.url')}
                 backgroundImage={get(props, 'data.sectionFive.backgroundImage')}
             />}
-            {get(props, 'data.sectionFour', false) && <HeroWithCircleBars
-                title={get(props, 'data.sectionFour.title', false)}
-                description={get(props, 'data.sectionFour.description', false)}
-                items={get(props, 'data.sectionFour.items', false)}
-                backgroundColor={get(props, 'data.sectionFour.backgroundColor', 'transparent')}
-            />}
+            
         </main>
     )
 }
